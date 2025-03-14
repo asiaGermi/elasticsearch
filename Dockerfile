@@ -1,5 +1,5 @@
 # Usa l'immagine ufficiale di Elasticsearch
-FROM docker.elastic.co/elasticsearch/elasticsearch:8.5.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.10.2
 
 # Imposta le variabili d'ambiente per un nodo singolo
 ENV discovery.type=single-node
