@@ -6,6 +6,8 @@ services:
     branch: main
     plan: starter
     envVars:
+      - key: PORT
+        value: "9200"
       - key: discovery.type
         value: single-node
       - key: ES_JAVA_OPTS
@@ -14,3 +16,4 @@ services:
       name: esdata
       mountPath: /usr/share/elasticsearch/data
       sizeGB: 10
+      
