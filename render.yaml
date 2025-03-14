@@ -1,6 +1,6 @@
 services:
   - name: elasticsearch
-    type: web
+    type: background
     runtime: docker
     repo: https://github.com/tuo-repo/elasticsearch-render
     branch: main
