@@ -11,3 +11,5 @@ EXPOSE 9200
 # Comando per avviare Elasticsearch
 CMD ["bin/elasticsearch"]
 EXPOSE 9200
+
+COPY config/elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
