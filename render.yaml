@@ -6,6 +6,8 @@ services:
     branch: main
     plan: starter
     envVars:
+      - key: ES_JAVA_OPTS
+        value: "-Xms256m -Xmx256m"
       - key: PORT
         value: "9200"
       - key: discovery.type
