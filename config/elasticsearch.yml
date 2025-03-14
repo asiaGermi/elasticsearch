@@ -1,0 +1,15 @@
+cluster.name: "render-elasticsearch"
+node.name: "node-1"
+network.host: 0.0.0.0
+http.port: 9200
+
+# Modalità nodo singolo (discovery semplificata)
+discovery.type: single-node
+
+# Disattiva funzionalità pesanti
+xpack.ml.enabled: false
+xpack.security.enabled: false
+bootstrap.memory_lock: false
+
+# Ottimizzazione memoria
+indices.memory.index_buffer_size: 10%
